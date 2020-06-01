@@ -3,7 +3,7 @@
         <nav>
             <router-link to="/" style="margin-top: 7.5px;">
                 <figure v-ripple="{ class: `info--text` }">
-                    <img src="../assets/LOGO.png" alt="" width="80px">
+                    <img src="../assets/logo.png" alt="" width="80px">
                 </figure>
             </router-link>
 
