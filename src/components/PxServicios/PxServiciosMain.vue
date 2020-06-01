@@ -23,7 +23,6 @@
                 <div class="servicios__dominicales--itemCarrousel">2</div>
                 <div class="servicios__dominicales--itemCarrousel">3</div>
             </div>
-            </div>
         </section>
 
         <section class="servicios__estudioBiblico">
