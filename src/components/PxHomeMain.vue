@@ -54,7 +54,7 @@ export default {
     }
 
     .main__mainText {
-        text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.27);
+        text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.445);
         font-size: 60px;
         color: #FFF
     }
@@ -75,5 +75,24 @@ export default {
         letter-spacing: 2.5px;
         color: #FFF;
     }
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .main__mainText {
+        font-size: 1.7em;
+    }
+
+    .main_mainIcon .v-icon.v-icon {
+    font-size: 5em;
+    }
+
+    .main__phrase {
+    font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
 
 </style>

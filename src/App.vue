@@ -1,12 +1,29 @@
 <template>
     <v-app>
-        <px-nav transition="scale-transition" />
-            <v-content>
-                <router-view />
-            </v-content>
-        <px-footer transition="scale-transition" />
+        <px-nav />
+                <v-content>
+                    <transition name="fade" mode="out-in">
+                        <router-view />
+                    </transition>
+                </v-content>
+        <px-footer />
     </v-app>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.5s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0
+}
+
+</style>
 
 <script>
 import PxNav from '@/components/PxNav'

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <header>
+        <header id="header">
             <div class="header__title">
                 <h1>Nuestro Servicios</h1>
                 <span style="justify-self: center;">Accede a nuestro contenido Digital</span>
@@ -18,6 +18,7 @@ export default {
 <style scoped>
     header {
         height: 65vh;
+        width: 100%;
         background-image: url('../../assets/Servicios_Header-min.jpg');
         background-repeat: no-repeat;
         background-position: center center;
@@ -48,6 +49,22 @@ export default {
     h1 {
         color: whitesmoke;
         font-size: 100px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .header__title h1{
+            font-size: 2.2em;
+        }
+
+        .header__title span {
+            font-size: 1em;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .header__title h1{
+            font-size: 4.8em;
+        }
     }
 
 </style>

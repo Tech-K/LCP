@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Oraciones from '../views/Oraciones.vue'
 import Servicios from '../views/Servicios.vue'
+import Construccion from '../views/Construccion.vue'
 import Error from '../views/Error.vue'
 
 
@@ -25,6 +26,12 @@ Vue.use(VueRouter)
     path: '/servicios',
     name: 'Servicios',
     component: Servicios
+  },
+
+  {
+    path: '/construccion',
+    name: 'Construccion',
+    component: Construccion
   },
 
   {

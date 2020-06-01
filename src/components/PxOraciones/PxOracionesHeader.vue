@@ -35,11 +35,18 @@ export default {
 
     .header__title {
         grid-row: title;
+        text-align: center;
     }
 
     h1 {
         color: whitesmoke;
         font-size: 100px;
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+        .header__title h1 {
+            font-size: 4em;
+        }
     }
 
 </style>

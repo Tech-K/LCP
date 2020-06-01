@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav>
-            <router-link to="/">
+            <router-link to="/" style="margin-top: 7.5px;">
                 <figure v-ripple="{ class: `info--text` }">
                     <img src="../assets/LOGO.png" alt="" width="80px">
                 </figure>
@@ -30,13 +30,14 @@
 
     .v-application a {
         text-decoration: none;
-        color: #f2bf10;
+        color: #FFF;
+        text-shadow: 0px 0px 3px #f2bf10;
     }
 
     .link-clave {
         border-radius: 10px ;
         padding: 10px;
-        background-color: blueviolet;
+        background-color: #f2bf10;
     }
     
 

@@ -98,12 +98,13 @@ export default {
         align-items: center;
         justify-items: center;
 
-        vertical-align: middle;
+        /* row-gap: 50px; */
     }
 
     .header__frase {
         background-color: #275287;
         color: #f2bf10;
+        text-shadow: 0 0 3px #e4bf48;
         display: inline-block;
         width: 690px;
         font-size: 50px;
@@ -120,11 +121,59 @@ export default {
     h1 {
         color: whitesmoke;
         font-size: 100px;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #484848, 0 0 20px #275287;
     }
 
     .v-application p {
         margin: 0px;
     }
+
+
+@media (min-width: 911px){
+    .header__container {
+      row-gap: 50px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .header__container {
+    grid-template-rows: min-content min-content min-content;
+    row-gap: 1em;
+    }
+
+    .header__title h1 {
+      font-size: 4.3em;
+    }
+
+    .header__frase {
+      width: 100%;
+      font-size: 1.4em;
+    }
+
+    .header__direction {
+      font-size: 1em
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header__container {
+      grid-template-rows: min-content min-content min-content;
+    }
+
+    .header__title h1 {
+      font-size: 100px;
+    }
+
+    .header__frase {
+      width: 100%;
+      font-size: 50px;
+    }
+
+    .header__direction {
+      align-self: flex-start;
+      font-size: 20px;
+    }
+}
 
 
 </style>
