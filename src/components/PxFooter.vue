@@ -1,10 +1,10 @@
 <template>
-    <footer>
-        <section>
+    <footer class="footer">
+        <!-- <section>
             <div>
-                <h2>Contenido Izquierdo</h2>
+                <h2>"Donde Todos Tienen un Lugar"</h2>
             </div>
-        </section>
+        </section> -->
 
         <section class="footer__socialNetworks">
             <div class="footer__socialNetworks--tittle">
@@ -22,6 +22,14 @@
 
 <style lang="scss" scoped>
 
+.footer {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    color: #ffcc00;
+    text-shadow: 1px 1px 6px #ffd736;
+}
+
 
 .footer__socialNetworks--items {
     display: grid;
@@ -29,39 +37,39 @@
     column-gap: 20px;
     justify-items: center;
     align-items: center;
-    margin: 20px 0px;
+    margin: 10px 0px 0px 0px;
 }
 
 .footer__socialNetworks--instagram::before {
     display: inline-block;
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-image: url('../assets/icons/instagram.svg');
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     cursor: pointer;
 }
 
 .footer__socialNetworks--youtube::before {
     display: inline-block;
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-image: url('../assets/icons/youtube.svg');
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     cursor: pointer;
 }
 
 .footer__socialNetworks--whatsapp::before {
     display: inline-block;
     content: "";
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-image: url('../assets/icons/whatsapp.svg');
     background-repeat: no-repeat;
-    background-size: 50px 50px;
+    background-size: 40px 40px;
     cursor: pointer;
 }
 
